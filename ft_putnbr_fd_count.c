@@ -6,7 +6,7 @@
 /*   By: lboulatr <lboulatr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 13:47:16 by lboulatr          #+#    #+#             */
-/*   Updated: 2023/02/16 15:24:09 by lboulatr         ###   ########.fr       */
+/*   Updated: 2023/02/22 14:05:27 by lboulatr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,25 +37,4 @@ int	ft_putnbr_fd_count(int n, int fd)
 {
 	ft_putnbr_fd_count_bis(n, fd);
 	return (count(n));
-}
-
-int	ft_putstr_fd_count(char *s, int fd)
-{
-	int	i;
-
-	i = 0;
-	if (s)
-	{
-		while (s[i])
-		{
-			write(fd, &s[i], 1);
-			i++;
-		}
-	}
-	else
-	{
-		write(fd, "(null)", 6);
-		i += 6;
-	}
-	return (i);
 }
