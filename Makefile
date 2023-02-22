@@ -6,7 +6,7 @@
 #    By: lboulatr <lboulatr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 15:54:04 by lboulatr          #+#    #+#              #
-#    Updated: 2023/02/22 13:37:00 by lboulatr         ###   ########.fr        #
+#    Updated: 2023/02/22 14:01:45 by lboulatr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ SRCS 							= main.c \
 									ft_hexaptr.c \
 									ft_putnbr_fd_count.c \
 									ft_putnbr_fd_usign.c \
+									utils.c \
 	
 OBJS 							= $(SRCS:%.c=$(BUILD_DIR)%.o)
 

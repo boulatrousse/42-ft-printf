@@ -6,7 +6,7 @@
 #    By: lboulatr <lboulatr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/07 13:06:34 by lboulatr          #+#    #+#              #
-#    Updated: 2023/02/16 14:49:23 by lboulatr         ###   ########.fr        #
+#    Updated: 2023/02/22 14:01:59 by lboulatr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ RM_RF                   = rm -rf
 
 $(BUILD_DIR)%.o:        %.c ${HEAD} Makefile
 	 					    @mkdir -p $(@D)
-						    ${CC} ${FLAGS} -include${HEAD} -c $< -o $@
+						    @${CC} ${FLAGS} -include${HEAD} -c $< -o $@
 
 all:    			    ${NAME}    Makefile
 
